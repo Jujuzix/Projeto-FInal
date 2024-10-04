@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <title>RMborracharia</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Imgs/picwish (1).png">
+  <script src="node.js"></script>
+</head>
+
+
+  <!-- Começo do Navbar -->
+<body onload="inicial()">
+  <div class="topo">
+    <nav class="navbar ">
+      <div class="container-fluid">
+
+        <img src="Imgs/picwish (1).png" alt="Logo" width="70" height="70" class="pneu">
+     <a class="navbar-brand" href="#">
+          <h1 class="logo">RMborracharia</h1>
+          <p class="logo text-lg-center">Acessórios e Ferramentas</p>
+        </a>
+        
+        
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+          </li>
+
+          
+
+          <li class="nav-item ">
+            <a class="nav-link " href="contatos.html">
+              CONTATO
+            </a>
+          </li>
+
+          
+
+
+
+          <li class="nav-item">
+            <a class="nav-link " href="registrar.html">LOGIN</a>
+          </li>
+
+ <li class="nav-item">
+             <a onclick="carregaCarrinho()" class="nav-link " href="#">
+              CARRINHO
+            </a>
+          </li>
+
+           <li class="nav-item">
+             <a onclick="Favoritos()" aria-current="page" class="nav-link " href="#">
+              FAVORITOS
+            </a>
+          </li>
+
+          <a class="nav-link dropdown-toggle" href="prod.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ITENS
+          </a>
+          <ul class="dropdown-menu ">
+            <li><a onclick="filtroProdutos()" class="dropdown-item" href="#">PRODUTOS</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a onclick="filtroFerramentas()" class="dropdown-item" href="#">FERRAMENTAS</a></li>
+            
+          </ul>
+           
+
+         
+
+
+ <div class="d-flex" role="search">
+      <input id="buscar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button onclick="pesquisar()" class="btn btn-outline-success" type="button">Buscar</button>
+    </div>
+         
+
+
+          
+
+          
+      </div>
+  </div>
+  
+  </nav>
+  <!-- Final do Navbar -->
+  <div class="barra">
+    &nbsp;
+  </div>
+
+  <!-- Começo do Carossel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imgs/0.jpg" width="" height="" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Imgs/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!-- Final do Carossel -->
+  
+  <div class="jj">
+    &nbsp;
+  </div>
+
+  <!-- Começo dos Botões Especiais -->
+  <div class="containers text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <a class="nav-links" href="contatos.html"> <img src="Imgs/telefone.png" alt="contatos" width="70" height="70"></a>
+        <a class="nav-links" href="contatos.html">
+          <h1>CONTATO</h1>
+        </a>
+      </div>
+      <div class="col">
+        <img src="Imgs/moto.png" alt="Entrega" width="70" height="70">
+        <a class="nav-links" href="contatos.html">
+          <h1>ENTREGA</h1>
+        </a>
+      </div>
+        <div class="col">
+        <img src="Imgs/produtos.png" alt="Produtos" width="70" height="70">
+        <a class="nav-links" href="subprod.html">
+          <h1>MAIS PRODUTOS</h1>
+        </a>
+      </div>
+
+      <!-- Final dos Botões -->
+
+      
+    <!-- Começo da Tabela de Produtos -->
+      <div class="jujubs">
+        <nav class=" barra ">
+         
+            <h1 class="alinhamento">Produtos e Ferramentas</h1>
+
+          
+
+               
+
+              
+ 
+
+          
+          
+        </nav>
+     
+        <div id="containerProdutos" class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://valflex.vteximg.com.br/arquivos/ids/710763-290-290/2539_1.jpg?v=637631611807900000"
+                  class="card-img-top">
+                <div class="card-body">
+              
+                  <p class="card-text">Cola Vulcanizante A Frio Cv-00 Lata 225. </p>
+                  <p >Valor: R$25,98</p>
+                   <img src="Imgs/icons8-cesto-de-compras-2-30.png" alt="carrinho">
+                   <img src="Imgs/fav.png" alt="favorito">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://valflex.vteximg.com.br/arquivos/ids/710839-290-290/3404_1.jpg?v=637631614397600000"
+                  class="card-img-top">
+                <div class="card-body">
+
+                  <p class="card-text">Manchão a Frio Caixa com 10 Peças-Rac-14-Vipal</p>
+                  <p >Valor: R$91,00</p>
+                  <img src="Imgs/icons8-cesto-de-compras-2-30.png" alt="carrinho">
+                   <img src="Imgs/fav.png" alt="favorito">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://valflex.vteximg.com.br/arquivos/ids/714490-290-290/56191_1.jpg?v=637631774441400000"
+                  class="card-img-top">
+                <div class="card-body">
+                 
+                  <p class="card-text">Pasta Desmontante 3Kg-V11G-Resim</p>
+                  <p >Valor: R$70,80 à vista</p>
+                  <img src="Imgs/icons8-cesto-de-compras-2-30.png" alt="carrinho">
+                   <img src="Imgs/fav.png" alt="favorito">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Final da Tabela de Produtos-->
+  <h1>Carrinho</h1>
+      <!--Botão de Finalizar Compra-->
+       <h5 id="precoCompra" class="compraTotal"></h5>
+  <button onclick="limparClick()" class="btn btn-primary" type="button">FINALIZAR COMPRA</button>
+      <div>
+        <div id ="containerCarrinho">
+        </div>
+      </div>
+      <!-- Final fo botão-->
+
+ w
+
+ 
+
+  <div class="clearfix">
+ <div class="jj">
+    &nbsp;
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+  
+ 
+
+  
+ <!-- Começo do Rodapé -->
+  <div class="rodape">
+    <nav class="rodape navbar ">
+      <div class="col">
+        <div class="text-center">
+          <h1 class="ff">This is what everyone wants. its free for limited time </h1><a class="ff"
+            href="#">RMborracharia</a>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="rodape2 p-2 text-dark">
+    <div class="container ">
+      <div class="row">
+        <div class="col">
+          <p align=left class="ss"> <img src="Imgs/picwish (1).png" alt="" width="30" height=""
+              class="d-inline-block "><strong>Copyright 2022</strong> by Juliana Maronez</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+   </div>
+   </div>
+   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<!-- Final do Rodapé -->
+</body>
+
+</html>

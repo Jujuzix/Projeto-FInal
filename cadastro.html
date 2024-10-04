@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <title>RMborracharia</title>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <!-- Começo do navbar-->
+   <div class="seila">
+    <nav class="navbar ">
+      <div class="container-fluid">
+
+        <img src="Imgs/picwish (1).png" alt="" width="70" height="70" class="pneu">
+        <a class="navbar-brand" href="#">
+          <h1 class="pneu">RMborracharia</h1>
+          <p class="pneu text-lg-center">Acessórios e Ferramentas</p>
+        </a>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link " href="contatos.html">
+              CONTATO
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link " href="registrar.html">LOGIN</a>
+          </li>
+
+
+
+          <a class="nav-link dropdown-toggle" href="prod.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ITENS
+          </a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item" href="prod.html">PRODUTOS</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a onclick="filtroFerramentas()" class="dropdown-item" href="#">FERRAMENTAS</a></li>
+          </ul>
+
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="carrinho.html">
+              CARRINHO <img src="Imgs/icons8-basket-30.png" alt="carrinho">
+
+            </a>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://goo.gl/maps/NUeXvkUQQjYNftBr9">Localização - Frete Grátis</a>
+          </li>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="10" cy="10" r="7"></circle>
+                <line x1="21" y1="21" x2="15" y2="15"></line>
+              </svg></button>
+          </form>
+      </div>
+  </div>
+  </nav>
+  <div class="JJ">
+    &nbsp;
+  </div>
+
+  <!-- Começo do carrossel -->
+    <br>
+  <main>
+
+    <div class="row justify-content-center">
+      
+        <form class="col-sm-10 col-md-8 col-lg-6">
+           <h1 class="mb-3">Identifique-se</h1>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="txtNomeC" placeholder=" ">
+            <label for="txtNomeC" class="form-label">Nome Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="txtNomeC" placeholder=" ">
+            <label for="txtNomeC" class="form-label">E-mail</label>
+          </div>
+          <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="validationCustom03" required>
+    <label for="validationCustom03" class="form-label">Cidade</label>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Estado</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Selecione..</option>
+      <option>AC</option>
+      <option>AL</option>
+      <option>AP</option>
+      <option>AM</option>
+      <option>BA</option>
+      <option>CE</option>
+      <option>DF</option>
+      <option>ES</option>
+      <option>GO</option>
+      <option>MA</option>
+      <option>MT</option>
+      <option>MS</option>
+      <option>MG</option>
+      <option>PA</option>
+      <option>PB</option>
+      <option>PR</option>
+      <option>PE</option>
+      <option>PI</option>
+      <option>RJ</option>
+      <option>RN</option>
+      <option>RS</option>
+      <option>RO</option>
+      <option>RR</option>
+      <option>SC</option>
+      <option>SP</option>
+      <option>SE</option>
+      <option>TO</option>
+    </select>
+    <br>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="validationCustom05" required>
+    <label for="validationCustom05" class="form-label">CEP</label>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Concordo com todos os termos.
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+          <br>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Cadastrar</button>
+  </div>
+        </form>
+    </div>
+  </main>
+
+  <br>
+  <br>
+  
+  <div class="fdss">
+    <nav class=" fdss navbar ">
+      <div class="col">
+        <div class="text-center">
+          <h1 class="ff">This is what everyone wants. its free for limited time </h1><a class="ff" href="#" >RMborracharia</a>
+          </div>
+        
+      </nav>
+  </div>
+
+
+  <div class="ll p-2 text-dark bg-opacity-75">
+  <div class="container ">
+    <div class="row">
+      <div class="col">
+        <p align=left class="ss"> <img src="Imgs/picwish (1).png" alt="" width="30" height="" class="d-inline-block "><strong>Copyright 2022</strong> by Juliana Maronez</p>
+      </div>
+      <div class="col order-5">
+      
+        <img align = right src="icons/camera-minus.svg" class="d-block w-90" alt="">
+        <img align = right src="icons/bug.svg" class="d-block w-90" alt="">
+        <img align = right src="icons/code.svg" class="d-block w-90" alt="">
+        <img align = right src="icons/brand-google (2).svg" class="d-block w-90" alt="">
+        <img align = right src="icons/brand-visual-studio.svg" class="d-block w-90" alt="">
+        <img align = right src="icons/brand-github.svg" class="d-block w-90" alt="">
+
+
+      </div>   
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

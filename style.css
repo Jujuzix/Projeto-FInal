@@ -1,0 +1,237 @@
+body{
+    background:  #C8C8C8;
+  
+	
+}
+
+hr{
+  color:#000;
+
+}
+
+.navbar{
+    background: #C8C8C8;
+  
+
+}
+
+.logo{
+  color: #002b5c;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pneu{
+    color: #002b5c;
+    font-family: 'Times New Roman', Times, serif;
+  animation: animaçãoDoPneu 2s infinite alternate;
+}
+@keyframes animaçãoDoPneu{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.carousel{
+    margin: 0.2% 0.36% 0.2% 0.36%;
+}
+.topo{
+    /*border: 3px solid rgb(2, 2, 2);*/
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-left: 0.2%;
+	margin-bottom: 0.2%;
+   
+
+}
+
+.ajuste{
+  padding: 0%;
+  margin: 0%;
+}
+
+.alinhamento{
+  text-align: center;
+  color: #ffff;
+}
+
+.logo:hover{
+   
+    color: #000000;
+}
+
+.nav-link {
+    color: #002b5c;
+    
+    font-size: 15px;
+    
+}
+
+.nav-link:hover{
+     color: #002b5c;
+     font-size: 15px;
+}
+
+.nav-links{
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+.juro{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+.juro:hover{
+    color: rgb(0, 0, 0);
+    
+    font-size: 15px;
+}
+
+.nav-link:hover{
+    color: rgb(0, 0, 0);
+    
+    font-size: 15px;
+}
+
+.tmp{
+    color: #000;
+}
+
+  .btn{ 
+    background: #444655;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+     border: 2px solid #ffff;
+    
+  }
+  .btn:hover{
+      background-color: #007FFF;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+     
+  }
+
+.nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color:#002b5c
+}
+
+.nav-link:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(0, 60, 255)
+}
+.jujubs{
+    
+    background: #C8C8C8;
+   
+   
+    
+   
+      
+
+}
+
+
+
+.barra{
+    background: #002b5c;
+  
+       
+}
+.jj{
+  background: #C8C8C8 ;
+}
+
+
+.navbar-brand{
+    color: #ffff;
+}
+.sp{
+    color: aliceblue;
+}
+
+.txt{
+    font-size: 25px;
+}
+
+.ff{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.ff:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.rodape{
+   
+    background:#002b5c;
+}
+
+.ss{
+    color: rgb(0, 0, 0);
+}
+
+
+.rodape2{
+  padding: 2% 0% 2% 0%;
+    background: #FCF7FF;
+    
+}
+
+.bt{
+    text-decoration: none;
+  color: #ffff;
+}
+
+.sono{
+ 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.sono:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.preco{
+    color: #0054EB;
+    font-weight: bold;
+}
+
+/*carrinho*/
+
+.titulo{
+font-family: Impact, fantasy;
+color: #5ebff8;
+}
+.titulo:hover{
+    font-family: Impact, fantasy;
+    color: #5ebff8;
+    }
+
+.car{
+    font-size: 20px;
+    font-family: Times, Times New Roman, serif;
+}
+
+.valor{
+    color: #000;
+    font-family:Times, Times New Roman, serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
